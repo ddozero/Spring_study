@@ -12,5 +12,6 @@ public interface BbsService {
 	public List<BbsDTO> bbsListAll();
 	public BbsDTO bbsWrite(BbsDTO dto);
 	public BbsDTO bbsContent(int idx);
+	public int bbsUpdate(BbsDTO dto);
 
 }

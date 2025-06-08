@@ -22,4 +22,5 @@ public class BbsController {
 		return "bbs/bbsContent";
 	}
 
+
 }

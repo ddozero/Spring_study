@@ -31,5 +31,11 @@ public class BbsDAOImple implements BbsDAO {
 		BbsDTO dto = sqlSession.selectOne("bbsContent",idx);
 		return dto;
 	}
+	
+	@Override
+	public int bbsUpdate(BbsDTO dto) {
+		int count = sqlSession.update("bbsUpdate",dto);
+		return count;
+	}
 
 }

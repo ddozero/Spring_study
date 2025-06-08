@@ -26,8 +26,13 @@
 	<!-- 게시판 조회 -->
 	<select id="bbsContent" parameterType="int" resultType="com.yeong.bbs.model.BbsDTO">
 		select * from jsp_bbs where idx = #{idx}
-
 	</select>
 	
+	<!-- 게시판 수정 -->
+	<update id="bbsUpdate" parameterType="com.yeong.bbs.model.BbsDTO">
+		UPDATE jsp_bbs SET  title = #{title}, 
+							content = #{content} 
+							WHERE idx = #{idx}
+	</update>
 
 </mapper>

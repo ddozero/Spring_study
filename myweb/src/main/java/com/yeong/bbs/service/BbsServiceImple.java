@@ -43,5 +43,11 @@ public class BbsServiceImple implements BbsService {
 
 		return dto;
 	}
+	
+	@Override
+	public int bbsUpdate(BbsDTO dto) {
+		int count = bbsDao.bbsUpdate(dto);
+		return count;
+	}
 
 }
