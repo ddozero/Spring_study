@@ -16,11 +16,16 @@
 
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
 	<mvc:annotation-driven/>
+	
 	<!-- service -->
 	<bean id = "bbsService" class="com.yeong.bbs.service.BbsServiceImple">
 		<property name="bbsDao" ref="bbsDao"></property>
 	</bean>
-
+	
+		<bean id = "memberService" class="com.yeong.member.service.MemberServiceImple">
+		<property name="memberDao" ref="memberDao"></property>
+	</bean>
+ 
 	<!-- viewResolvers -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

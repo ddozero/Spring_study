@@ -37,6 +37,10 @@
 	<bean id="bbsDao" class="com.yeong.bbs.model.BbsDAOImple">
 		<constructor-arg ref="sqlSessionTemplate"></constructor-arg>
 	</bean>
+	
+		<bean id="memberDao" class="com.yeong.member.model.MemberDAOImple">
+		<constructor-arg ref="sqlSessionTemplate"></constructor-arg>
+	</bean>
 
 
 </beans>

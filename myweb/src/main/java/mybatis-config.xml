@@ -8,6 +8,10 @@
 
 	<mappers>
 	<mapper resource = "sqlMapper/bbsSQL.xml"></mapper>
+	<mapper resource = "sqlMapper/memberSQL.xml"></mapper>
+	
 	</mappers>
+	
+	
 	
 </configuration>
