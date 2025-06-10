@@ -9,6 +9,7 @@
 <body>
 <h1>restful방식 게시판</h1>
 <hr>
+<a href="memberJoin">회원가입</a> <br>
 <a href="bbsList">게시판 이동</a>
 </body>
 </html>

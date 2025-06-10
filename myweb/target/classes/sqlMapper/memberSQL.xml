@@ -7,7 +7,7 @@
 <mapper namespace="com.yeong.member">
 
 	<!-- 회원가입 -->
-	<insert id = "memberJoin" parameterType="com.yeong.member.memberDTO">
+	<insert id = "memberJoin" parameterType="com.yeong.member.model.MemberDTO">
 	insert into jsp_member values (jsp_member_idx.nextval,
 									#{id},
 									#{password},
